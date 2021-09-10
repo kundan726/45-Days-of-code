@@ -46,11 +46,36 @@ public class Multidimensional_array {
         corrected
          */
         
-        for (int i = 0; i < m; i++) {
-            for (int j = 0; j <n ; j++) {
+        for (i = 0; i < m; i++) {
+            for (j = 0; j <n ; j++) {
                 System.out.println(arr[i][j]);
             }
         }
+	//code added by shubham
+	System.out.print("Enter the no. of Rows : ");
+        int x = sc.nextInt();
+        System.out.print("Enter the no. of Columns : ");
+        int y = sc.nextInt();
+
+        int house[][] = new int[x][y];
+
+        int i, j;
+        System.out.println("\nEnter the elements of array :");
+        for (i=0; i<x; i++){
+            for (j=0; j<y; j++){
+                System.out.print("Element [" + i + "][" + j + "] : ");
+                house[i][j] = sc.nextInt();
+            }
+        }
+
+        System.out.println("\nThe elements of array are :");
+        for (i=0; i<x; i++){
+            for (j=0; j<y; j++){
+                System.out.print(house[i][j] + "\t");
+            }
+            System.out.println("\n");
+        }
+	//changes
 
     }
 }
